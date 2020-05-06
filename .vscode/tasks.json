@@ -37,8 +37,8 @@
         },
         {
             "type": "shell",
-            "label": "gcc.exe build active file",
-            "command": "C:\\cygwin64\\bin\\gcc.exe",
+            "label": "MinGW gcc.exe build active file",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -46,7 +46,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "C:\\cygwin64\\bin"
+                "cwd": "C:\\MinGW\\bin"
             }
         }
     ]

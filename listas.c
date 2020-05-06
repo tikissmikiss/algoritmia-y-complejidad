@@ -76,13 +76,13 @@ void delete(Element** p_head, Element** p_tail, Element* abolish) {
         }
         prev->next = abolish->next;
     }
-    //free(abolish);    
+    free(abolish);    
 }
 
 // Imprimir lista 
 void print_list (Element* head) {
     while (head!=NULL) {
-        //printf("%d", head->key);
+        printf("%d", head->key);
         head = head->next;
     }
 }
@@ -178,7 +178,7 @@ int main(int argc, char** argv) {
     delete(&head, &tail, head);
     delete(&head, &tail, tail);
 
-    return 0;
+    //return 0;
 
     add_last(&head, &tail, 5);
     add_last(&head, &tail, 4);
