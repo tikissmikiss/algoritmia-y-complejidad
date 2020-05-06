@@ -26,7 +26,7 @@ void inicialize_list (Element** p_head, Element** p_tail) {
     *p_tail = NULL;
 }
 
-// AÃ±adir al principio de la lista
+// Añadir al principio de la lista
 void add_first(Element** p_head, Element** p_tail, int value) {
     // Reserva memoria para el nuevo elemento 
     Element* new_element = malloc(sizeof(Element));   
@@ -41,7 +41,7 @@ void add_first(Element** p_head, Element** p_tail, int value) {
     }
 }
 
-// AÃ±adir al final de la lista
+// Añadir al final de la lista
 void add_last(Element** p_head, Element** p_tail, int value) {
     // Reserva memoria para el nuevo elemento 
     Element* new_element = malloc(sizeof(Element));   
@@ -187,5 +187,3 @@ int main(int argc, char** argv) {
     print_list(head);
     return 0;
 }
-
-
