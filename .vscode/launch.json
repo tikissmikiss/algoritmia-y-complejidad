@@ -1,11 +1,32 @@
 {
     // Use IntelliSense para saber los atributos posibles.
     // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para mÃƒÂ¡s informaciÃƒÂ³n, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Depurar con MinGW",
+            "name": "(gdb) Compilar+Depurar con MinGW (Consola interna)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Habilitar la impresión con sangría para gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "MinGW: gcc.exe build active file"
+        },
+        {
+            "name": "(gdb) Depurar con MinGW regular",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -25,28 +46,7 @@
             ]
         },
         {
-            "name": "(gdb) Depurar con MinGW OK",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "Habilitar la impresiÃƒÂ³n con sangrÃƒÂ­a para gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "MinGW gcc.exe build active file"
-        },
-        {
-            "name": "gcc.exe - Compilar y depurar el archivo activo",
+            "name": "CygWin64: Compilar y depurar el archivo activo",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -59,12 +59,12 @@
             "miDebuggerPath": "C:\\cygwin64\\bin\\gdb.exe",
             "setupCommands": [
                 {
-                    "description": "Habilitar la impresiÃ³n con sangrÃ­a para gdb",
+                    "description": "Habilitar la impresión con sangría para gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "gcc.exe build active file"
+            "preLaunchTask": "CygWin64: gcc.exe build active file"
         }
     ]
 }
