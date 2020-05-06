@@ -5,7 +5,53 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< HEAD
             "name": "gcc.exe - Compilar y depurar el archivo activo",
+=======
+            "name": "Depurar con MinGW (Consola interna)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Habilitar la impresión con sangría para gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "MinGW: gcc.exe build active file"
+        },
+        {
+            "name": "Depurar con MinGW (Consola externa)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Habilitar la impresión con sangría para gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "MinGW: gcc.exe build active file"
+        },
+        {
+            "name": "CygWin64: Compilar y depurar el archivo activo",
+>>>>>>> 91917a865397b68d1d01e3a9db571b4b98069677
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -23,7 +69,11 @@
                     "ignoreFailures": true
                 }
             ],
+<<<<<<< HEAD
             "preLaunchTask": "gcc.exe build active file"
+=======
+            "preLaunchTask": "CygWin64: gcc.exe build active file"
+>>>>>>> 91917a865397b68d1d01e3a9db571b4b98069677
         }
     ]
 }

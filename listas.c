@@ -26,7 +26,11 @@ void inicialize_list (Element** p_head, Element** p_tail) {
     *p_tail = NULL;
 }
 
+<<<<<<< HEAD
 // AÃ±adir al principio de la lista
+=======
+// Añadir al principio de la lista
+>>>>>>> 91917a865397b68d1d01e3a9db571b4b98069677
 void add_first(Element** p_head, Element** p_tail, int value) {
     // Reserva memoria para el nuevo elemento 
     Element* new_element = malloc(sizeof(Element));   
@@ -41,7 +45,11 @@ void add_first(Element** p_head, Element** p_tail, int value) {
     }
 }
 
+<<<<<<< HEAD
 // AÃ±adir al final de la lista
+=======
+// Añadir al final de la lista
+>>>>>>> 91917a865397b68d1d01e3a9db571b4b98069677
 void add_last(Element** p_head, Element** p_tail, int value) {
     // Reserva memoria para el nuevo elemento 
     Element* new_element = malloc(sizeof(Element));   
@@ -76,13 +84,21 @@ void delete(Element** p_head, Element** p_tail, Element* abolish) {
         }
         prev->next = abolish->next;
     }
+<<<<<<< HEAD
     //free(abolish);    
+=======
+    free(abolish);    
+>>>>>>> 91917a865397b68d1d01e3a9db571b4b98069677
 }
 
 // Imprimir lista 
 void print_list (Element* head) {
     while (head!=NULL) {
+<<<<<<< HEAD
         //printf("%d", head->key);
+=======
+        printf("%d", head->key);
+>>>>>>> 91917a865397b68d1d01e3a9db571b4b98069677
         head = head->next;
     }
 }
@@ -178,7 +194,11 @@ int main(int argc, char** argv) {
     delete(&head, &tail, head);
     delete(&head, &tail, tail);
 
+<<<<<<< HEAD
     return 0;
+=======
+    //return 0;
+>>>>>>> 91917a865397b68d1d01e3a9db571b4b98069677
 
     add_last(&head, &tail, 5);
     add_last(&head, &tail, 4);
@@ -187,5 +207,8 @@ int main(int argc, char** argv) {
     print_list(head);
     return 0;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 91917a865397b68d1d01e3a9db571b4b98069677
