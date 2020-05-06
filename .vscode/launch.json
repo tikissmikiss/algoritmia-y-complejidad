@@ -1,7 +1,7 @@
 {
     // Use IntelliSense para saber los atributos posibles.
     // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    // Para mÃƒÂ¡s informaciÃƒÂ³n, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -38,7 +38,7 @@
             "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
             "setupCommands": [
                 {
-                    "description": "Habilitar la impresión con sangría para gdb",
+                    "description": "Habilitar la impresiÃƒÂ³n con sangrÃƒÂ­a para gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
@@ -59,7 +59,7 @@
             "miDebuggerPath": "C:\\cygwin64\\bin\\gdb.exe",
             "setupCommands": [
                 {
-                    "description": "Habilitar la impresión con sangría para gdb",
+                    "description": "Habilitar la impresiÃ³n con sangrÃ­a para gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
