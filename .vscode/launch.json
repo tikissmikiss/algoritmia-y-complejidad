@@ -15,7 +15,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "miDebuggerPath": "C:\\MinGW-w64\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Habilitar la impresión con sangría para gdb",
@@ -23,7 +23,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "MinGW: gcc.exe build active file"
+            "preLaunchTask": "MinGW 64: gcc.exe build active file"
         },
         {
             "name": "Depurar con MinGW (Consola externa)",
@@ -36,7 +36,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "miDebuggerPath": "C:\\MinGW-w64\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Habilitar la impresión con sangría para gdb",
@@ -44,7 +44,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "MinGW: gcc.exe build active file"
+            "preLaunchTask": "MinGW 64: gcc.exe build active file"
         },
         {
             "name": "CygWin64: Compilar y depurar el archivo activo",

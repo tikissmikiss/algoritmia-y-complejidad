@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "C/C++: gcc.exe build active file",
+            "label": "MinGW 64: gcc.exe build active file",
             "command": "C:\\MinGW-w64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
@@ -18,36 +18,6 @@
                 "$gcc"
             ],
             "group": "build"
-        },
-        {
-            "type": "shell",
-            "label": "C/C++: cl.exe build active file",
-            "command": "cl.exe",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/Fe:",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
-            ],
-            "problemMatcher": [
-                "$msCompile"
-            ],
-            "group": "build"
-        },
-        {
-            "type": "shell",
-            "label": "gcc.exe build active file",
-            "command": "C:\\cygwin64\\bin\\gcc.exe",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "C:\\cygwin64\\bin"
-            }
         }
     ]
 }
